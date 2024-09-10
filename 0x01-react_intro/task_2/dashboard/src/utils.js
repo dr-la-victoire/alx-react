@@ -5,7 +5,7 @@ function getFullYear() {
 }
 
 function getFooterCopy(isIndex) {
-  if (isIndex) {
+  if (isIndex === true) {
     return "Holberton School";
   }
 
