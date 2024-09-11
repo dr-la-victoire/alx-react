@@ -20,10 +20,13 @@ module.exports = {
       },
       {
         test: /\.(gif|svg|png|jpg|jpeg)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
         use: [
           {
-            loader: ["file-loader", "image-webpack-loader"],
+            loader: "file-loader"
+          },
+          {
+            loader: "image-webpack-loader",
             options: {
               bypassOnDebug: true,
               disable: true
