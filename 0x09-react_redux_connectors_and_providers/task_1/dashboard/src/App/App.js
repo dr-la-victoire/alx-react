@@ -141,4 +141,9 @@ export function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(App);
+export const mapDispatchToProps = {
+  displayNotificationDrawer,
+  hideNotificationDrawer
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
