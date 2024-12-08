@@ -16,6 +16,7 @@ import {
 	displayNotificationDrawer,
 	hideNotificationDrawer,
 } from '../actions/uiActionCreators';
+import { loginRequest } from '../../../../task_1/dashboard/src/actions/uiActionCreators';
 
 const listCourses = [
 	{ id: 1, name: 'ES6', credit: 60 },
@@ -207,6 +208,8 @@ export const mapStateToProps = (state) => {
 export const mapDispatchToProps = {
 	displayNotificationDrawer,
 	hideNotificationDrawer,
+	login: loginRequest,
+	logOut
 };
 
 // export default App;
